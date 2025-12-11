@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluff Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* ---------- brand colours ---------- */
+    :root{
+      --navBlue: #a8d1e6;   /* light blue you sent */
+      --darkBlue: #003366;
+      --white: #ffffff;
+    }
+
+    /* ---------- global ---------- */
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{font-family: "Helvetica Neue", Arial, sans-serif; color:var(--darkBlue);}
+    img{max-width:100%; display:block}
+    section{padding:80px 20px; text-align:center}
+
+    /* ---------- nav ---------- */
+    nav{
+      background:var(--navBlue);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:15px 30px;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    nav ul{list-style:none; display:flex; gap:25px}
+    nav a{color:var(--darkBlue); text-decoration:none; font-weight:600}
+
+    /* ---------- hero ---------- */
+    .hero{
+      min-height:90vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:30px;
+      padding:40px 20px;
+    }
+    .hero h1{
+      font-size:clamp(2.5rem, 5vw, 4rem);
+      color:var(--darkBlue);
+      font-family: "FluffFont", "Georgia", serif;   /* fallback */
+      letter-spacing:1px;
+    }
+    .fluffBox{
+      width:clamp(300px, 50vw, 500px);
+      border:3px dashed var(--navBlue);
+      padding:15px;
+      background:var(--white);
+    }
+
+    /* ---------- sections ---------- */
+    .darkBG{background:var(--darkBlue); color:var(--white)}
+    .lightBG{background:var(--navBlue); color:var(--darkBlue)}
+    h2{font-size:2.2rem; margin-bottom:25px}
+    .icon{width:180px; margin:0 auto 25px}
+
+    /* ---------- submissions ---------- */
+    .submissions{font-family: "FluffFont", Georgia, serif; font-size:2.8rem}
+  </style>
+</head>
+<body>
+
+  <!-- ---------- NAVBAR ---------- -->
+  <nav>
+    <div class="logo">FLUFF</div>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#products">PRODUCTS</a></li>
+      <li><a href="#recipes">RECIPES</a></li>
+      <li><a href="#gallery">PHOTO GALLERY</a></li>
+      <li><a href="#submissions">SUBMISSIONS</a></li>
+    </ul>
+  </nav>
+
+  <!-- ---------- HERO (above the fold) ---------- -->
+  <section id="home" class="hero">
+    <h1>Let's all lighten up a little</h1>
+    <div class="fluffBox">
+      <img src="tempImagen18rgG.jpg" alt="Layered marshmallow fluff">
+    </div>
+  </section>
+
+  <!-- ---------- OUR HISTORY ---------- -->
+  <section id="about" class="darkBG">
+    <img src="Screenshot 2025-12-10 at 7.03.09 PM.png" alt="Fluff man" class="icon">
+    <h2>Our History</h2>
+    <p>Since 1920 Marshmallow Fluff has been spreading joy one sandwich at a time…</p>
+  </section>
+
+  <!-- ---------- RECIPES ---------- -->
+  <section id="recipes" class="darkBG">
+    <img src="Screenshot 2025-12-10 at 7.09.44 PM.png" alt="Original Fluff jar" class="icon">
+    <h2>Recipes</h2>
+    <p>From classic Fluffernutter to gourmet desserts—get inspired.</p>
+  </section>
+
+  <!-- ---------- PHOTO GALLERY ---------- -->
+  <section id="gallery" class="darkBG">
+    <img src="Screenshot 2025-12-10 at 6.52.08 PM.png" alt="Boy with sandwich" class="icon">
+    <h2>Photo Gallery</h2>
+    <p>Share your happiest Fluff moments with the community.</p>
+  </section>
+
+  <!-- ---------- SUBMISSIONS ---------- -->
+  <section id="submissions" class="lightBG">
+    <img src="Screenshot 2025-12-10 at 7.09.30 PM.png" alt="Strawberry Fluff" class="icon">
+    <h2 class="submissions">Fluff-on-the-Face</h2>
+    <p>Send us your funniest fluff faces and fan creations!</p>
+  </section>
+
+</body>
+</html>
