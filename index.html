@@ -105,6 +105,20 @@
 
     /* ---------- submissions ---------- */
     .submissions{font-family: "FluffFont", Georgia, serif; font-size:2.8rem}
+    .submissionsBtn{
+      background:var(--navBlue);
+      color:var(--darkBlue);
+      border:3px dashed var(--darkBlue);
+      padding:20px 40px;
+      font-size:1.5rem;
+      font-weight:600;
+      cursor:pointer;
+      margin:30px auto;
+      display:inline-block;
+      text-transform:uppercase;
+    }
+    .submissionsBtn:hover{opacity:0.9}
+    .submissionsBtn:focus{outline:3px solid var(--darkBlue); outline-offset:4px}
   </style>
 </head>
 <body>
@@ -157,6 +171,7 @@
 
   <!-- ---------- SUBMISSIONS ---------- -->
   <section id="submissions" class="lightBG">
+    <button class="submissionsBtn" type="button" aria-label="View submissions">SUBMISSIONS</button>
     <img src="strawberry%20fluff.png" alt="Strawberry Fluff" class="icon">
     <h2 class="submissions">Fluff-on-the-Face</h2>
     <p>Send us your funniest fluff faces and fan creations!</p>
