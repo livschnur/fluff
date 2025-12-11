@@ -10,6 +10,7 @@
       --navBlue: #a8d1e6;   /* light blue you sent */
       --darkBlue: #003366;
       --white: #ffffff;
+      --navHeight: 110px;   /* nav bar height for hero section calculation */
     }
 
     /* ---------- global ---------- */
@@ -55,7 +56,7 @@
 
     /* ---------- hero ---------- */
     .hero{
-      height: calc(100vh - 110px);
+      height: calc(100vh - var(--navHeight)); /* Leave space at bottom matching nav bar */
       display:flex;
       flex-direction:column;
       align-items:center;
@@ -63,7 +64,7 @@
       gap:30px;
       padding:0;
       position: relative;
-      overflow: hidden;
+      overflow: hidden; /* Crop the absolutely positioned image */
     }
     .hero h1{
       font-size:clamp(2.5rem, 5vw, 4rem);
