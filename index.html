@@ -84,8 +84,42 @@
     /* ---------- sections ---------- */
     .darkBG{background:var(--darkBlue); color:var(--white)}
     .lightBG{background:var(--navBlue); color:var(--darkBlue)}
-    h2{font-size:2.2rem; margin-bottom:25px}
-    .icon{width:180px; margin:0 auto 25px}
+    h2{font-size:clamp(1.5rem, 3vw, 2.2rem); margin-bottom:clamp(15px, 2vw, 25px)}
+    .icon{width:clamp(200px, 25vw, 300px); margin:0 auto clamp(15px, 2vw, 25px)}
+    
+    /* ---------- horizontal sections icons ---------- */
+    .horizontal-sections .icon{
+      width:clamp(200px, 25vw, 300px);
+      height:clamp(250px, 30vw, 350px);
+      margin:0 auto clamp(15px, 2vw, 25px);
+      object-fit:contain;
+    }
+    
+    /* ---------- horizontal sections container ---------- */
+    .horizontal-sections{
+      display:flex;
+      flex-wrap:wrap;
+      background:var(--darkBlue);
+      padding:60px 20px;
+      gap:40px;
+      justify-content:center;
+      align-items:flex-start;
+    }
+    .horizontal-sections section{
+      flex:1;
+      min-width:250px;
+      max-width:400px;
+      padding:20px;
+      background:var(--darkBlue);
+      color:var(--white);
+    }
+    .horizontal-sections p{
+      font-size:clamp(0.9rem, 1.5vw, 1.1rem);
+      line-height:1.6;
+      word-wrap:break-word;
+      overflow-wrap:break-word;
+      hyphens:auto;
+    }
 
     /* ---------- border section ---------- */
     .borderSection{
@@ -148,26 +182,29 @@
     </div>
   </section>
 
-  <!-- ---------- OUR HISTORY ---------- -->
-  <section id="about" class="darkBG">
-    <img src="fluff%20history.png" alt="Fluff man" class="icon">
-    <h2>Our History</h2>
-    <p>Since 1920 Marshmallow Fluff has been spreading joy one sandwich at a time…</p>
-  </section>
+  <!-- ---------- HORIZONTAL SECTIONS ---------- -->
+  <div class="horizontal-sections">
+    <!-- ---------- OUR HISTORY ---------- -->
+    <section id="about">
+      <img src="fluff%20history.png" alt="Fluff man" class="icon">
+      <h2>Our History</h2>
+      <p>Since 1920 Marshmallow Fluff has been spreading joy one sandwich at a time…</p>
+    </section>
 
-  <!-- ---------- RECIPES ---------- -->
-  <section id="recipes" class="darkBG">
-    <img src="elf%20man.png" alt="Original Fluff jar" class="icon">
-    <h2>Recipes</h2>
-    <p>From classic Fluffernutter to gourmet desserts—get inspired.</p>
-  </section>
+    <!-- ---------- RECIPES ---------- -->
+    <section id="recipes">
+      <img src="elf%20man.png" alt="Original Fluff jar" class="icon">
+      <h2>Recipes</h2>
+      <p>From classic Fluffernutter to gourmet desserts—get inspired.</p>
+    </section>
 
-  <!-- ---------- PHOTO GALLERY ---------- -->
-  <section id="gallery" class="darkBG">
-    <img src="boy%20with%20sandwich.png" alt="Boy with sandwich" class="icon">
-    <h2>Photo Gallery</h2>
-    <p>Share your happiest Fluff moments with the community.</p>
-  </section>
+    <!-- ---------- PHOTO GALLERY ---------- -->
+    <section id="gallery">
+      <img src="boy%20with%20sandwich.png" alt="Boy with sandwich" class="icon">
+      <h2>Photo Gallery</h2>
+      <p>Share your happiest Fluff moments with the community.</p>
+    </section>
+  </div>
 
   <!-- ---------- SUBMISSIONS ---------- -->
   <section id="submissions" class="lightBG">
