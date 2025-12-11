@@ -104,7 +104,27 @@
     }
 
     /* ---------- submissions ---------- */
-    .submissions{font-family: "FluffFont", Georgia, serif; font-size:2.8rem}
+    .submissions{font-family: "Helvetica Neue", Arial, sans-serif; font-size:2.8rem}
+    
+    /* ---------- gallery layout ---------- */
+    .galleryLayout{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:30px;
+      max-width:1200px;
+      margin:0 auto;
+    }
+    .galleryLayout .icon{
+      width:auto;
+      max-width:180px;
+      flex:0 1 auto;
+    }
+    .galleryLayout > div{
+      flex:0 1 auto;
+      text-align:center;
+    }
   </style>
 </head>
 <body>
@@ -157,11 +177,17 @@
 
   <!-- ---------- SUBMISSIONS ---------- -->
   <section id="submissions" class="lightBG">
-    <img src="strawberry%20fluff.png" alt="Strawberry Fluff" class="icon">
-    <h2 class="submissions">Fluff-on-the-Face</h2>
-    <p>Send us your funniest fluff faces and fan creations!</p>
-    <img src="original%20fluff.png" alt="original jar" class="icon">
-    <h2 class="submissions">Recipes</h2>
+    <div class="galleryLayout">
+      <div>
+        <img src="strawberry%20fluff.png" alt="Strawberry Fluff" class="icon">
+        <h2 class="submissions">Fluff-on-the-Face</h2>
+        <p>Send us your funniest fluff faces and fan creations!</p>
+      </div>
+      <div>
+        <img src="original%20fluff.png" alt="original jar" class="icon">
+        <h2 class="submissions">Recipes</h2>
+      </div>
+    </div>
   </section>
 
 </body>
