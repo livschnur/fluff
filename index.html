@@ -29,8 +29,29 @@
       top:0;
       z-index:10;
     }
-    nav ul{list-style:none; display:flex; gap:25px}
-    nav a{color:var(--darkBlue); text-decoration:none; font-weight:600}
+    nav .nav-left{
+      display:flex;
+      list-style:none;
+      gap:25px;
+      flex:1;
+    }
+    nav .nav-center{
+      display:flex;
+      justify-content:center;
+      flex:1;
+    }
+    nav .nav-center img{
+      height:50px;
+      width:auto;
+    }
+    nav .nav-right{
+      display:flex;
+      list-style:none;
+      gap:25px;
+      flex:1;
+      justify-content:flex-end;
+    }
+    nav a{color:var(--darkBlue); text-decoration:none; font-weight:600; font-size:1.5rem; text-transform:lowercase}
 
     /* ---------- hero ---------- */
     .hero{
@@ -69,14 +90,18 @@
 
   <!-- ---------- NAVBAR ---------- -->
   <nav>
-    <div class="logo">FLUFF</div>
-    <ul>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#products">PRODUCTS</a></li>
-      <li><a href="#recipes">RECIPES</a></li>
-      <li><a href="#gallery">PHOTO GALLERY</a></li>
-      <li><a href="#submissions">SUBMISSIONS</a></li>
+    <ul class="nav-left">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#products">products</a></li>
+    </ul>
+    <div class="nav-center">
+      <img src="fluff%20logo.jpeg" alt="Fluff Logo">
+    </div>
+    <ul class="nav-right">
+      <li><a href="#recipes">recipes</a></li>
+      <li><a href="#gallery">photo gallery</a></li>
+      <li><a href="#submissions">submissions</a></li>
     </ul>
   </nav>
 
